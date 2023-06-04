@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 app.use(
   cors({
-    origin: 'http://localhost:3000', // Replace with the appropriate client origin
+    origin: '*', // Replace with the appropriate client origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed HTTP methods
   })
 );
